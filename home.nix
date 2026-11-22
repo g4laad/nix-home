@@ -4,7 +4,7 @@
   home = {
     username = "user";
     homeDirectory = "/home/user";
-    sessionPath = [ "${config.home.homeDirectory}/.local/bin" ];
+    sessionPath = [ "${config.home.homeDirectory}/.local/bin" "${config.home.homeDirectory}/.cargo/bin" ];
     packages = [ pkgs.nerd-fonts.jetbrains-mono ];
     # Compatibility baseline: keep this when updating the flake inputs.
     stateVersion = "26.05";
